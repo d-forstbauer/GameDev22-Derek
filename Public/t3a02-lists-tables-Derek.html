@@ -1,4 +1,4 @@
-<h5>Version 0.0.2.7</h5>
+<h5>Version 0.0.2.8</h5>
 
 <h1 align=center>T3A02-Lists-and-Tables-by-Derek</h1>
 
@@ -39,13 +39,18 @@ Load an image and get it to move 10 pixals to the left using the buttom below<br
 <image id="myImage01" src="https://pbs.twimg.com/profile_images/726045460331401216/izaV7jmy_400x400.jpg" style="position:relative; left:0; top:0; width:50;
 height:50; "><br>
   
-<input type=button value="Go Right" onclick="{
-   document.getElementById('myImage01').style.left= '200px'
+<input type=button value="Go Right Side" onclick="{
+   document.getElementById('myImage01').style.left= '500px'
    document.getElementById('myDiv01').innerHTML = 'It went right'
 }">
   
-<input type=button value="Go Left" onclick="{
-   document.getElementById('myImage01').style.left= '-10px'
+<input type=button value="Go Center" onclick="{
+   document.getElementById('myImage01').style.left= '250px'
+   document.getElementById('myDiv01').innerHTML = 'It went left'
+}">
+  
+<input type=button value="Go Left Side" onclick="{
+   document.getElementById('myImage01').style.left= '0px'
    document.getElementById('myDiv01').innerHTML = 'It went left'
 }">
   
