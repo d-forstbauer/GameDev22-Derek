@@ -21,11 +21,11 @@ b {
 I do CSS inside the tag. It overpowers all other methods<br>
 
 <b > This is Bold</b><br>
-<b id="myB1" style="color:#00ff00; background-Color:blue; "> This is bold too </b><br>
+<b id="myB1" style="color:#00ff00; background-Color:blue; "> This is bold too </b>
 <input type=button value="Change" onclick="{
     document.getElementById('myB1').style.color = 'red'
     document.getElementById('myB1').style.backgroundColor = 'yellow'
-}"><br>
+}">
 
 <input type=button value="Change Back" onclick="{
     document.getElementById('myB1').style.color = '#00ff00'
@@ -37,18 +37,19 @@ I do CSS inside the tag. It overpowers all other methods<br>
 Advanced see if you can move this textarea
 </textarea><br>
 
-<html>
 <head>
 <style> 
-  
-<textarea style="position:relative; left:0; top:0; width:200; height:50; ">
-Advanced see if you can move this textarea
-</textarea><br>
+div {
+  width: 100px;
+  height: 100px;
+  background: #009316;
+  position: relative;
+  animation: mymove 10s infinite;
+}
 
 @keyframes mymove {
   from {left: 0px;}
-  to {left: 200px;}
+  to {left: 500px;}
 }
 </style>
 </head>
-<body>
