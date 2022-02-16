@@ -1,29 +1,54 @@
-<!DOCTYPE html>
 <html>
 <head>
-<style> 
-div {
-  width: 100px;
-  height: 100px;
-  background: red;
-  position: relative;
-  animation: myfirst 5s 2;
-  animation-direction: regular;
-  animation-iteration-count: infinite;
-}
+        <style>
+        body {
+          background-color: #222;
+          animation-name: color;
+          animation-duration: 10s;
+          animation-iteration-count: infinite;
+        }
 
-@keyframes myfirst {
-  0%   {background: red; left: 0px; top: 0px;}
-  25%  {background: yellow; left: 200px; top: 0px;}
-  50%  {background: blue; left: 0px; top: 200px;}
-  75%  {background: green; left: 200px; top: 200px;}
-  100% {background: red; left: 0px; top: 0px;}
-}
-</style>
-</head>
+        @keyframes color {
+          0% {
+            background-color: #6A0000;
+          }
+          25% {
+            background-color: #686A00;
+          }
+          50% {
+            background-color: #066A00;
+          }
+          75% {
+            background-color: #00106A;
+          }
+          100% {
+            background-color: #6A0068;
+          }
+        }
+        </style>
+        <style> 
+        div {
+          width: 100px;
+          height: 100px;
+          background: red;
+          position: relative;
+          animation: myfirst 5s 2;
+          animation-direction: regular;
+          animation-iteration-count: infinite;
+        }
+
+        @keyframes myfirst {
+          0%   {background: red; left: 0px; top: 0px;}
+          25%  {background: yellow; left: 200px; top: 0px;}
+          50%  {background: blue; left: 0px; top: 200px;}
+          75%  {background: green; left: 200px; top: 200px;}
+          100% {background: red; left: 0px; top: 0px;}
+        }
+        </style>
+        </head>
 
 
-Version 0.0.1.22</br>
+Version 0.0.1.23</br>
 <h1 align=center> T3A04 CSS by Derek</h1>
 
 Reference Link
