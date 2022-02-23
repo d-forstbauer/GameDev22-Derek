@@ -1,4 +1,4 @@
-Version 0.0.1.6
+Version 0.0.1.7
 
 <h2 align=center>T3A05 Input/Output by Derek</h2>
 
@@ -23,12 +23,23 @@ Version 0.0.1.6
 
 <div id="myDiv01">...</div><br><br>
 
-<p id="demo" onclick="myFunction()">Click me to change my HTML content (innerHTML).</p>
+<p id="demo" onclick="myFunction()">Click me to change my text.</p>
 
 <script>
 function myFunction() {
   document.getElementById("demo").innerHTML = "I have changed!";
 }
+</script><br><br>
+
+<p id="demo">Click the button to delete this text (innerHTML).</p>
+<button onclick="myFunction()">Try it</button>
+
+<script>
+function myFunction() {
+  document.getElementById("demo").innerHTML = "";
+}
 </script>
+
+
 
 
