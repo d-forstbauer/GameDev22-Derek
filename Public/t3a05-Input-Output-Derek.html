@@ -79,6 +79,25 @@ function B() {
 }
 </script>
 
+Multiply<br>
+<input id="myNum3" type=number value="16">*<input id="myNum4" type=number value="8">
+
+<input type=button value="this button multiplies" onclick="{
+let myx3 = document.getElementById('myNum3').value
+let myx4 = document.getElementById('myNum4').value
+document.getElementById('Div4').innerHTML = myx3*myx4
+}">
 
 
+
+<div id="Div4">..</div>
+
+Dividing<br>
+<input id="myNum11" type=number value="64"> / <input id="myNum12" type=number value="4">
+
+<input type=button value="This Button Divides" onclick="{
+let myx11 = document.getElementById('myNum11').value
+let myx12 = document.getElementById('myNum12').value
+document.getElementById('Div7').innerHTML = (parseFloat(myx11) / parseFloat(myx12))              
+}">
 
