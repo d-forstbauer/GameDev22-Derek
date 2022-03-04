@@ -1,1 +1,54 @@
-version 0.0.1
+h2>Version 0.0.1</h2>
+<!DOCTYPE html>
+<html>
+<body style="background-color:Black;">
+<head>
+<style>
+body {
+  color: PowderBlue;
+}
+h1 {
+  text-shadow: 2px 2px;
+}
+</style>
+</head>
+<body>
+    
+  <h1 style="border: 2px solid MediumTurquoise;"><center> Variables Webpage</center></h1>
+<a href="">Good Reference to Variables in javascript and other languages</a><br>
+
+Other Languages use: Bool, int, Floata, Char, String, Int_8, Int_16 etc<br>
+
+Note: Javascript does use Varr and let for local variables.<br>
+For Global Mr.Ellis prefers document.myVarName<br>
+
+</body>
+</html>
+
+<h4>Example Variable code</h4>
+<pre>
+    let myIn01 = document.getElementById('myText01').value
+    document.getElementById('myDiv01').innerHTML = myIn01
+</pre>
+
+<h4> Example of Working Code</h4>
+
+<input id="myText01" type=text value="the dog " ><br>
+
+<input type=button value="Show Variable" onclick="{
+   document.getElementById('myDiv01').innerHTML =
+       document.getElementById('myText01').value
+}"><br>
+
+<div id="myDiv01">...</div>
+
+
+<input id="myText" type=text value= x>
+
+<input id="MyButtonOne" type=button value="Button01" onclick="{
+let myX = document.getElementById('myText').value
+document.getElementById('Div1').innerHTML += myX +'<br>'
+}">
+
+<div id="Div1"></div>
+<br><br>
