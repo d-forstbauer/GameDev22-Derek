@@ -52,3 +52,18 @@ document.getElementById('Div1').innerHTML += myX +'<br>'
 
 <div id="Div1"></div>
 <br><br>
+  
+    Negative Variables<br>
+<input id="myText10" type=number value= 41>-
+<input id="myText11" type=number value= 55>=
+<input id="myText12" type=number value= 76>
+<input id="MyButtonOne" type=button value="Submit" onclick="{
+let myy = document.getElementById('myText10').value
+let myX = document.getElementById('myText11').value
+let myW = document.getElementById('myText12').value
+document.getElementById('Div7').innerHTML = ((parseFloat(myy)) - (parseFloat(myX))- (parseFloat(myW)))
+}">
+
+<div id="Div7"></div>
+<br>
+
