@@ -200,9 +200,9 @@ Not Equal To <br>
 <input id="Button" type=button value="Button09" onclick="{
 let myIn01 = parseFloat(document.getElementById('myNum09').value)
 document.getElementById('myDiv09').innerHTML = myIn01
-if(myIn01 <= 8){
-document.getElementById('myDiv09').innerHTML = myIn01 + ' Is Not Equal To 9'
-else(myIn01 >= 10){
+if(myIn01 < 8){
+document.getElementById('myDiv09').innerHTML = myIn01 + ' Is Not Equal To 9';
+} else(myIn01 > 9){
 document.getElementById('myDiv09').innerHTML = myIn01 + ' Is Not Equal To 9'
 }
 }">
