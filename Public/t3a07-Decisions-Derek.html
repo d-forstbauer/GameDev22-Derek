@@ -1,0 +1,211 @@
+<h2>Version 0.0.2</h2>
+<!DOCTYPE html>
+<html>
+<body style="background-color:Black;">
+<head>
+<style>
+body {
+  color: Pink;
+}
+h1 {
+  text-shadow: 2px 2px 5px red;
+}
+</style>
+</head>
+<body>
+  
+  <h1 style="border: 2px solid Violet;"><center>Decisions Webpage</center></h1>
+<a href="https://www.w3schools.com/js/js_if_else.asp">Good reference to Decisions if ... else statments
+  Javascript innerHTML value by Nathan</a><br>
+Note:! = Not, && = AND,    || = OR
+
+</body>
+</html>  
+  
+<h4> Example input output code</h4>
+<pre>
+let myHour = 20
+if (myHour < 18) {
+   let myGreeting = 'Good day';
+}
+</pre>
+
+<h4> Example working code</h4>
+
+<input id="myNum01" type=number value"8" ><br>
+
+<input type=button value="if...else" onclick="{
+    let myIn01 = parseFloat(document.getElementById('myNum01').value)
+    if (myIn01 >= 3){
+        document.getElementById('myDiv01').innerHTML = myIn01 + ' is greater than 3'
+    } else {
+         document.getElementById('myDiv01').innerHTML = myIn01 + ' is less than 3'}
+ }">
+ 
+ <input type=button value="complex if" onclick="{
+     let myIn01 = parseFloat(document.getElementById('myNum01').value)
+     if ((myIn01 !=3 || myIn01 > -3)  && myIn01 <=100 ){
+         document.getElementById('myDiv01').innerHTML = myIn01 + ' is complex'
+     } else {
+         document.getElementById('myDiv01').innerHTML = myIn01 + ' is not complex'}
+ }">
+ 
+ 
+ 
+ <div id="myDiv01">...</div>
+ 
+
+
+Change the number <input type="number" id="myTextIf" value="4" size="10">     
+    
+<input id="myButton03" type="button" value="If Statements" onclick="{
+      
+   document.getElementById('myDiv03').innerHTML = '' // Clear the DIV
+                                                                    
+   myIf =   document.getElementById('myTextIf').value   // Store the number
+     
+   if (myIf == 4){                                                                
+      document.getElementById('myDiv03').innerHTML += 'That number equals 4 <br>'
+   }   
+                                                                    
+   if (myIf <= 4){                                                                
+      document.getElementById('myDiv03').innerHTML += 'That number is less than 4 <br>'
+   }  
+                                                                            
+   if (Math.abs(myIf) == 4){        // absolute value of -4 = 4                                                         
+      document.getElementById('myDiv03').innerHTML += 'That number is either positive or negative 4<br>'
+   }  
+                                                                        
+   if (myIf < 0){                                                                
+      document.getElementById('myDiv03').innerHTML += 'That number is a negative number<br>'
+   }  
+                                                                    
+   if (myIf == 4){                                                                
+      document.getElementById('myDiv03').innerHTML += 'That number is less than or equal to 4 <br>'
+   }   
+                                                                    
+   if (myIf >= 4){                                                                
+      document.getElementById('myDiv03').innerHTML += 'That number is greater than or equal to 4 <br>'
+   }   
+                                                                    
+   if (myIf != 4){                                                                
+      document.getElementById('myDiv03').innerHTML += 'That number does not equal 4 <br>'
+   }   
+                                                                    
+   if ((myIf == 4) || (myIf == 8)) {                                                                
+      document.getElementById('myDiv03').innerHTML += 'That number equals either 4 or 8 <br>'
+   }     
+                                                                       
+                                                                    
+   if ((myIf == 4) &amp;&amp; (myIf < 8)) {                                                                
+      document.getElementById('myDivv').innerHTML += 'That number equals 4 and is less than 8 <br>'
+   }     
+                                                                       
+                                                                    
+                                                                   
+}"><br><br>
+
+<div id='myDiv03'>...</div><br>
+
+
+
+Greater Than <br>
+<input id="myNum04" type=number value="425"><br>
+
+<input id="Button" type=button value="Button04" onclick="{
+let myIn01 = parseFloat(document.getElementById('myNum04').value)
+document.getElementById('myDiv04').innerHTML = myIn01
+if(myIn01 > 3){
+document.getElementById('myDiv04').innerHTML = myIn01 + ' Is Greater Than 25'
+}
+}">
+
+<div id="myDiv04">..</div>
+
+<br><br>
+
+
+Less Than <br>
+<input id="myNum05" type=number value="-7"><br>
+
+<input id="Button" type=button value="Button05" onclick="{
+let myIn01 = parseFloat(document.getElementById('myNum05').value)
+document.getElementById('myDiv05').innerHTML = myIn01
+if(myIn01 < 0){
+document.getElementById('myDiv05').innerHTML = myIn01 + ' Is Less Than 2'
+}
+}">
+
+<div id="myDiv05">..</div>
+
+<br><br>
+
+
+
+Greater Than or Equal To<br>
+<input id="myNum06" type=number value="90"><br>
+
+<input id="Button" type=button value="Button06" onclick="{
+let myIn01 = parseFloat(document.getElementById('myNum06').value)
+document.getElementById('myDiv06').innerHTML = myIn01
+if(myIn01 >= 8){
+document.getElementById('myDiv06').innerHTML = myIn01 + ' Is Greater Than or Equal to 45'
+}
+}">
+
+<div id="myDiv06">..</div>
+
+<br><br>
+
+
+
+
+
+
+Equal To<br>
+<input id="myNum08" type=number value="3"><br>
+
+<input id="Button" type=button value="Button08" onclick="{
+let myIn01 = parseFloat(document.getElementById('myNum08').value)
+document.getElementById('myDiv08').innerHTML = myIn01
+if(myIn01 >= 3){
+document.getElementById('myDiv08').innerHTML = myIn01 + ' Equal to 3'
+}
+}">
+
+<div id="myDiv08">..</div>
+
+<br><br>
+
+Less Than or Equal To<br>
+<input id="myNum07" type=number value="6"><br>
+
+<input id="Button" type=button value="Button07" onclick="{
+let myIn01 = parseFloat(document.getElementById('myNum07').value)
+document.getElementById('myDiv07').innerHTML = myIn01
+if(myIn01 <= 2){
+document.getElementById('myDiv07').innerHTML = myIn01 + ' Is Less Than or Equal to 6'
+}
+}">
+
+<div id="myDiv07">..</div>
+
+
+<br><br>
+
+
+Not Equal To <br>
+<input id="myNum09" type=number value="1"><br>
+
+<input id="Button" type=button value="Button09" onclick="{
+let myIn01 = parseFloat(document.getElementById('myNum09').value)
+document.getElementById('myDiv09').innerHTML = myIn01
+if(myIn01 <= 5){
+document.getElementById('myDiv09').innerHTML = myIn01 + ' Is Not Equal To 9'
+}
+}">
+
+<div id="myDiv09">..</div>
+
+
+<br><br>
