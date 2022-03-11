@@ -38,7 +38,7 @@ if (myHour < 18) {
     let myIn01 = parseFloat(document.getElementById('myNum01').value)
     if (myIn01 >= 3){
         document.getElementById('myDiv01').innerHTML = myIn01 + ' is greater than 3';
-    } else if{
+    } else {
          document.getElementById('myDiv01').innerHTML = myIn01 + ' is less than 3'}
  }">
  
@@ -46,7 +46,7 @@ if (myHour < 18) {
      let myIn01 = parseFloat(document.getElementById('myNum01').value)
      if ((myIn01 !=3 || myIn01 > -3)  && myIn01 <=100 ){
          document.getElementById('myDiv01').innerHTML = myIn01 + ' is complex';
-     } else if{
+     } else {
          document.getElementById('myDiv01').innerHTML = myIn01 + ' is not complex'}
  }">
  
@@ -113,12 +113,12 @@ Greater Than <br>
 <input id="myNum04" type=number value="25"><br>
 
 <input id="Button" type=button value="Button04" onclick="{
-let myIn01 = parseFloat(document.getElementById('myNum04').value)
-document.getElementById('myDiv04').innerHTML = myIn01
-if(myIn01 > 25){
-document.getElementById('myDiv04').innerHTML = myIn01 + ' Is Greater Than 25';
-} else if(myIn01 < 25){
-document.getElementById('myDiv04').innerHTML = myIn01 + ' Is Not Greater Than 25'
+let myIn02 = parseFloat(document.getElementById('myNum04').value)
+document.getElementById('myDiv04').innerHTML = myIn02
+if(myIn02 > 25){
+document.getElementById('myDiv04').innerHTML = myIn02 + ' Is Greater Than 25';
+} else if(myIn02 < 25){
+document.getElementById('myDiv04').innerHTML = myIn02 + ' Is Not Greater Than 25'
 }">
 
 <div id="myDiv04">..</div>
@@ -134,7 +134,7 @@ let myIn01 = parseFloat(document.getElementById('myNum05').value)
 document.getElementById('myDiv05').innerHTML = myIn01
 if(myIn01 < 2){
 document.getElementById('myDiv05').innerHTML = myIn01 + ' Is Less Than 2'
-}else if(myIn01 < 2){
+}else if(myIn01 > 2){
 document.getElementById('myDiv05').innerHTML = myIn01 + ' Is Not Less Than 2'
 }">
 
