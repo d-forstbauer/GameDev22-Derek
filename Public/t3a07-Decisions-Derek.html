@@ -1,4 +1,4 @@
-<h2>Version 0.0.2.9</h2>
+<h2>Version 0.0.2.10</h2>
 <!DOCTYPE html>
 <html>
 <body style="background-color:Black;">
@@ -119,6 +119,7 @@ if(myIn02 > 25){
 document.getElementById('myDiv04').innerHTML = myIn02 + ' Is Greater Than 25';
 } else if(myIn02 < 25){
 document.getElementById('myDiv04').innerHTML = myIn02 + ' Is Not Greater Than 25'
+}
 }">
 
 <div id="myDiv04">..</div>
@@ -132,10 +133,11 @@ Less Than <br>
 <input id="Button" type=button value="Button05" onclick="{
 let myIn01 = parseFloat(document.getElementById('myNum05').value)
 document.getElementById('myDiv05').innerHTML = myIn01
-if(myIn01 < 2){
-document.getElementById('myDiv05').innerHTML = myIn01 + ' Is Less Than 2'
-}else if(myIn01 > 2){
+if(myIn01 <= 1){
+document.getElementById('myDiv05').innerHTML = myIn01 + ' Is Less Than 2';
+}else if(myIn01 >= 3){
 document.getElementById('myDiv05').innerHTML = myIn01 + ' Is Not Less Than 2'
+}
 }">
 
 <div id="myDiv05">..</div>
