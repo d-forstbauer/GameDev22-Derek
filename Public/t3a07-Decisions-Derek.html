@@ -1,4 +1,4 @@
-<h2>Version 0.0.2.5</h2>
+<h2>Version 0.0.2.6</h2>
 <!DOCTYPE html>
 <html>
 <body style="background-color:Black;">
@@ -115,7 +115,7 @@ Greater Than <br>
 <input id="Button" type=button value="Button04" onclick="{
 let myIn01 = parseFloat(document.getElementById('myNum04').value)
 document.getElementById('myDiv04').innerHTML = myIn01
-if(myIn01 > 3){
+if(myIn01 > 24){
 document.getElementById('myDiv04').innerHTML = myIn01 + ' Is Greater Than 25'
 }
 }">
@@ -131,60 +131,28 @@ Less Than <br>
 <input id="Button" type=button value="Button05" onclick="{
 let myIn01 = parseFloat(document.getElementById('myNum05').value)
 document.getElementById('myDiv05').innerHTML = myIn01
-if(myIn01 < 0){
+if(myIn01 < 1){
 document.getElementById('myDiv05').innerHTML = myIn01 + ' Is Less Than 2'
 }
 }">
 
 <div id="myDiv05">..</div>
 
-<br><br>
-
-
-
-Greater Than or Equal To<br>
-<input id="myNum06" type=number value="90"><br>
-
-<input id="Button" type=button value="Button06" onclick="{
-let myIn01 = parseFloat(document.getElementById('myNum06').value)
-document.getElementById('myDiv06').innerHTML = myIn01
-if(myIn01 >= 8){
-document.getElementById('myDiv06').innerHTML = myIn01 + ' Is Greater Than or Equal to 45'
-}
-}">
-
-<div id="myDiv06">..</div>
 
 <br><br>
 
-
-
-
-
-
-Equal To<br>
-<input id="myNum08" type=number value="3"><br>
-
-<input id="Button" type=button value="Button08" onclick="{
-let myIn01 = parseFloat(document.getElementById('myNum08').value)
-document.getElementById('myDiv08').innerHTML = myIn01
-if(myIn01 >= 3){
-document.getElementById('myDiv08').innerHTML = myIn01 + ' Equal to 3'
-}
-}">
-
-<div id="myDiv08">..</div>
-
-<br><br>
-
-Less Than or Equal To<br>
+Less Than, Greater than or Equal To<br>
 <input id="myNum07" type=number value="6"><br>
 
 <input id="Button" type=button value="Button07" onclick="{
 let myIn01 = parseFloat(document.getElementById('myNum07').value)
 document.getElementById('myDiv07').innerHTML = myIn01
-if(myIn01 <= 2){
-document.getElementById('myDiv07').innerHTML = myIn01 + ' Is Less Than or Equal to 6'
+if(myIn01 <= 5){
+document.getElementById('myDiv07').innerHTML = myIn01 + ' Is Less Than 6';
+} else if(myIn01 <= 7){
+document.getElementById('myDiv07').innerHTML = myIn01 + ' Is Greater Than 6';
+} else if(myIn01 == 6){
+document.getElementById('myDiv07').innerHTML = myIn01 + ' Is Equal Than 6';
 }
 }">
 
@@ -194,7 +162,7 @@ document.getElementById('myDiv07').innerHTML = myIn01 + ' Is Less Than or Equal 
 <br><br>
 
 
-Not Equal To <br>
+Not Equal To, or Equal To <br>
 <input id="myNum09" type=number value="1"><br>
 
 <input id="Button" type=button value="Button09" onclick="{
@@ -203,7 +171,9 @@ document.getElementById('myDiv09').innerHTML = myIn01
 if(myIn01 <= 8){
 document.getElementById('myDiv09').innerHTML = myIn01 + ' Is Not Equal To 9';
 } else if(myIn01 >= 10){
-document.getElementById('myDiv09').innerHTML = myIn01 + ' Is Not Equal To 9'
+document.getElementById('myDiv09').innerHTML = myIn01 + ' Is Not Equal To 9';
+} else if(myIn01 == 9){
+document.getElementById('myDiv09').innerHTML = myIn01 + ' Is Equal To 9'
 }
 }">
 
