@@ -116,8 +116,9 @@ Greater Than <br>
 let myIn01 = parseFloat(document.getElementById('myNum04').value)
 document.getElementById('myDiv04').innerHTML = myIn01
 if(myIn01 > 25){
-document.getElementById('myDiv04').innerHTML = myIn01 + ' Is Greater Than 25'
-}
+document.getElementById('myDiv04').innerHTML = myIn01 + ' Is Greater Than 25';
+} else if(myIn01 < 25){
+document.getElementById('myDiv04').innerHTML = myIn01 + ' Is Not Greater Than 25'
 }">
 
 <div id="myDiv04">..</div>
@@ -131,9 +132,10 @@ Less Than <br>
 <input id="Button" type=button value="Button05" onclick="{
 let myIn01 = parseFloat(document.getElementById('myNum05').value)
 document.getElementById('myDiv05').innerHTML = myIn01
-if(myIn01 < 1){
+if(myIn01 < 2){
 document.getElementById('myDiv05').innerHTML = myIn01 + ' Is Less Than 2'
-}
+}else if(myIn01 < 2){
+document.getElementById('myDiv05').innerHTML = myIn01 + ' Is Not Less Than 2'
 }">
 
 <div id="myDiv05">..</div>
@@ -149,10 +151,10 @@ let myIn01 = parseFloat(document.getElementById('myNum07').value)
 document.getElementById('myDiv07').innerHTML = myIn01
 if(myIn01 <= 5){
 document.getElementById('myDiv07').innerHTML = myIn01 + ' Is Less Than 6';
-} else if(myIn01 <= 7){
+} else if(myIn01 >= 7){
 document.getElementById('myDiv07').innerHTML = myIn01 + ' Is Greater Than 6';
 } else if(myIn01 == 6){
-document.getElementById('myDiv07').innerHTML = myIn01 + ' Is Equal Than 6';
+document.getElementById('myDiv07').innerHTML = myIn01 + ' Is Equal To 6';
 }
 }">
 
