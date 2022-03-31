@@ -1,4 +1,4 @@
-<h3><font color="LightPink">version 0.0.4.4</font></h3>
+<h3><font color="LightPink">version 0.0.4.5</font></h3>
 
 <body onload="myFunction()">
 <!DOCTYPE html>
@@ -153,7 +153,21 @@ function mouseUp() {
 }
 </script>
 <br>
+    
+<p class="double"><font color="grey">Write something in the text field below to trigger a function.</p>
 
+<input type="text" id="myInput01" oninput="myFunction()">
+
+<p id="demo10"></p>
+
+<script>
+function myFunction() {
+  var x = document.getElementById("myInput01").value;
+  document.getElementById("demo10").innerHTML = "You wrote: " + x;
+}
+</script>
+
+    
 <img onmouseover="bigImg(this)" onmouseout="normalImg(this)" border="0" src="https://media.istockphoto.com/vectors/abstract-colorful-hand-sketched-swirls-seamless-background-pattern-vector-id500677364?k=20&m=500677364&s=612x612&w=0&h=ig3JLm0YdXK5ab2At2MtDX_cLSYQIKXWRPM0clstFTA=" 
  alt="https://media.istockphoto.com/vectors/abstract-colorful-hand-sketched-swirls-seamless-background-pattern-vector-id500677364?k=20&m=500677364&s=612x612&w=0&h=ig3JLm0YdXK5ab2At2MtDX_cLSYQIKXWRPM0clstFTA=" width="32" height="32">
 
@@ -180,21 +194,7 @@ function normalImg(x) {
 <br>
 <br>
 
-<p class="double"><font color="grey">Write something in the text field below to trigger a function.</p>
 
-<input type="text" id="myInput01" oninput="myFunction()">
-
-<p id="demo10"></p>
-
-<script>
-function myFunction() {
-  var x = document.getElementById("myInput01").value;
-  document.getElementById("demo10").innerHTML = "You wrote: " + x;
-}
-</script>
-<br>
-<br>
-<br>
 <br>
 
 <p><font color="grey">Drag the p element back and forth between the two rectangles:</p>
