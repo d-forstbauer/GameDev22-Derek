@@ -1,4 +1,4 @@
-<h3><font color="LightPink">version 0.0.4.2</font></h3>
+<h3><font color="LightPink">version 0.0.4.4</font></h3>
 
 <body onload="myFunction()">
 <!DOCTYPE html>
@@ -60,11 +60,11 @@ p {
 <body>
 
 <h1 style="border: 2px solid Maroon;">Events Webpage</h1>
-<h3 style="border: 2px solid grey;">This example demonstrates onmousemovement, onmouseenter and onmouseover.</h3>
+<h3 style="border: 2px solid Maroon;"><font color="grey">This section of the webpage demonstrates onmousemovement, onmouseenter and onmouseover.</h3>
 
-<p class="double"><font color="grey">The onmousemove event occurs every time the mouse pointer is moved over the div element.</p></font>
-<p class="double"><font color="grey">The mouseenter event only occurs when the mouse pointer enters the div element. </p></font>
-<p class="double"><font color="grey">The onmouseover event occurs when the mouse pointer enters the div element, and its child elements (p and span).</p></font>
+<p class="double"><font color="grey">The 'onmousemove' event happens whenever the cursor is moved while over the div element.</p></font>
+<p class="double"><font color="grey">The 'mouseenter' event only occurs whenever the cursor enters the div element. </p></font>
+<p class="double"><font color="grey">The 'onmouseover' event happens whenever the cursor enters the div element, and its child elements (p and span).</p></font>
 
 <div onmousemove="myMoveFunction()">
   <p>onmousemove: <br> <span id="demo3">Mouse over me!</span></p>
@@ -100,22 +100,9 @@ function myOverFunction() {
 <br>
 <br>
 <br>
-  <font color="Purple"><h2 id="demo9" onmouseover="mouseOver()" onmouseout="mouseOut()">Mouse over me</h1>
-     
-<script>
-function mouseOver() {
-  document.getElementById("demo9").style.color = "OrangeRed";
-}
+  
 
-function mouseOut() {
-  document.getElementById("demo9").style.color = "MediumPurple";
-}
-</script>
-<br>
-<br>
-<br>
-
-Enter your name: <input type="text" id="myInput" onfocus="focusFunction()" onblur="blurFunction()"><br><br>
+<font color="grey">Enter your name: <input type="text" id="myInput" onfocus="focusFunction()" onblur="blurFunction()"><br><br>
 
 <script>
 // Focus = Changes the background color of input to yellow
@@ -129,6 +116,21 @@ function blurFunction() {
 }
 </script>
 
+<font color="Purple"><h2 id="demo9" onmouseover="mouseOver()" onmouseout="mouseOut()">Mouse on me :)</h1>
+     
+<script>
+function mouseOver() {
+  document.getElementById("demo9").style.color = "OrangeRed";
+}
+
+function mouseOut() {
+  document.getElementById("demo9").style.color = "MediumPurple";
+}
+</script>
+<br>
+<br>
+<br>      
+      
 </body>
 </html>
 <br>
@@ -137,8 +139,8 @@ function blurFunction() {
 <br>
 
 <p id="p0" onmousedown="mouseDown()" onmouseup="mouseUp()">
-Click This text To Activate The mouseDown() function and this is triggered when the mouse button is pressed down over the paragraph. The function sets the color of the text to red. 
-The mouseUp() function is triggered when the mouse button is released. The mouseUp() function sets the color of the text to green.
+-Click This text To Activate The mouseDown() function, this is triggered when the left mouse button is pressed down over the paragraph, setting the color of the text to red. 
+-The mouseUp() function is activated when the left mouse button is released, setting the color of the text to green.
 </p>
 
 <script>
@@ -158,8 +160,8 @@ function mouseUp() {
 <img onmouseover="bigImg(this)" onmouseout="normalImg(this)" border="0" src="https://media.istockphoto.com/vectors/abstract-colorful-hand-sketched-swirls-seamless-background-pattern-vector-id500677364?k=20&m=500677364&s=612x612&w=0&h=ig3JLm0YdXK5ab2At2MtDX_cLSYQIKXWRPM0clstFTA=" 
  alt="https://media.istockphoto.com/vectors/abstract-colorful-hand-sketched-swirls-seamless-background-pattern-vector-id500677364?k=20&m=500677364&s=612x612&w=0&h=ig3JLm0YdXK5ab2At2MtDX_cLSYQIKXWRPM0clstFTA=" width="32" height="32">
 
-<p class="double"><font color="Plum">The function bigImg() is triggered when the user mouse over the image. This function enlarges the image.</font></p>
-<p class="double"><font color="Plum">The function normalImg() is triggered when the mouse pointer is moved out of the image. That function sets the height and width of the image back to normal.</font></p>
+<p class="double"><font color="Plum">The function bigImg() is triggered when the users cursor over the image. This function enlarges the image.</font></p>
+<p class="double"><font color="Plum">The function normalImg() is triggered when the cursor is moved off of the image. That function sets the height and width of the image back to normal.</font></p>
 <br>
 <br>
 <br>
