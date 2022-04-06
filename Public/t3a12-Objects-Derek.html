@@ -1,1 +1,111 @@
+<h3><font color="#DDEAF0">Version 0.0.3</h3>
+ <!DOCTYPE html>
+<html>
+<head>
+<style>
+body  {
+  background-image: url("https://wallpaperaccess.com/full/52448.jpg");
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: 100% 100%;
+  text-shadow: 0 0 3px red, 0 0 1px white;
+}
+ h1 {
+  text-decoration: underline overline dotted #DDEAF0;
+  text-shadow: 0 0 3px red, 0 0 1px white;
+}
+ h2 {
+  text-shadow: 0 0 3px #FF0000, 0 0 5px #0000FF;
+}
+ p {
+  text-decoration: underline;
+  -webkit-text-decoration-color: red; /* Safari */  
+  text-decoration-color: red;
+}
+</style>
+</head>
+<body>
+</body>
+</html>
+<h1 align=center>Objects Webpage by Derek</h2>
 
+<a href="https://www.w3schools.com/js/js_objects.asp">Good reference to Javascript Objects</a><br>
+
+<p>Objects are stored named variables</p>
+
+<u><h2> Example Objects code:</h4></u>
+<pre><font color="White">
+let myPerson = {
+   "firstName": "John",
+   "lastName": "Doe",
+   "age": 50,
+   "eyeColor": "blue"
+   }
+   
+</pre></font>
+
+<u><h2> Example working Objects code:</h2></u>
+
+Objects?: <input type=text id="myText01" value="Person?"><br>
+
+
+<input type=button value="Example Object Set and Show" onClick="{
+                                                                
+   let myPerson = {
+     'firstName' : 'John',
+     'lastName'  : 'Doe',
+     'age'       : 50,
+     'eyeColor'  : 'blue'
+  }
+  
+    document.getElementById('myDiv01').innerHTML = '<br>myPerson Object has properties: <br>'
+    document.getElementById('myDiv01').innerHTML += 'First Name: ' + myPerson.firstName + '<br>'
+    document.getElementById('myDiv01').innerHTML += 'Last Name: ' + 
+myPerson.lastName + '<br>' 
+	document.getElementById('myDiv01').innerHTML += 'Age: ' + 
+myPerson.age + '<br>'
+	document.getElementById('myDiv01').innerHTML += 'Eye Color: ' + 
+myPerson.eyeColor + '<br>'
+
+}">
+
+<div id="myDiv01">...</div>
+
+<br>
+<br>
+<br>
+<br>
+
+	<input id="myText03a" type=text value=Paul><br>
+<input id="myText03b" type=text value=Rudd><br>
+
+
+<input type=button value="Make and Show Object" onclick="{
+ let x = document.getElementById('myText03a').value
+ let y = document.getElementById('myText03b').value
+
+ 
+ let myObject = {
+       'age':'53',
+       'eyeColor':'Brown',                                                  
+       'firstName' : x,
+       'lastName' : y,
+       'hairColor' :'Brown',
+       'birthMonth': 'April',
+       'birthDate': '6th, 1969'
+       }
+       
+document.getElementById('myDiv04').innerHTML ='First Name: ' + 		myObject.firstName + '<br>'
+document.getElementById('myDiv04').innerHTML +='Last Name: ' + 		myObject.lastName + '<br>'
+document.getElementById('myDiv04').innerHTML +='Age: ' + 			myObject.age + '<br>'                                           
+document.getElementById('myDiv04').innerHTML +='Birth Month: ' + 	myObject.birthMonth + '<br>'
+document.getElementById('myDiv04').innerHTML +='Birth Date: ' + 	myObject.birthDate + '<br>' 
+document.getElementById('myDiv04').innerHTML +='Eye Color: ' + 		myObject.eyeColor + '<br>' 
+document.getElementById('myDiv04').innerHTML +='Hair Color: ' + 	myObject.hairColor   
+                                                         
+}"><br><br>
+
+
+<div id="myDiv04">...</div><br><br>
+
+<img width=250 src="https://www.famousbirthdays.com/faces/rudd-paul-image.jpg">
