@@ -1,0 +1,96 @@
+<h3><font color="DarkTurquoise">Version 0.0.2</font></h3>
+<h1 align=center>Classes Webpage</h1>
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+body  {
+  background-image: url("jeff.gif");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+ h1 {
+  text-decoration-line: underline;
+  text-decoration-style: wavy;
+  color: LightPink;
+}
+ h2 {
+  text-shadow: 0 0 3px #FF0000, 0 0 5px #0000FF;
+}
+  h4 {
+  color: LightSeaGreen;
+}
+ p {
+  text-decoration: underline;
+  -webkit-text-decoration-color: red; /* Safari */  
+  text-decoration-color: red;
+}
+</style>
+</head>
+<body>
+</body>
+</html>
+<a href="https://www.w3schools.com/js/js_classes.asp">Find a good reference to Javascript Classes </a><br>
+<p><font color="red">Classes are bothObjects that store variables (called Properties) and Functions
+  that work on the variables (called Methods)</p></font>
+
+<h4> Example Classes code</h4>
+<pre><font color="LightBlue">
+    constructor(passName, passAge) {
+       this.myName = passName;
+       this.myAge = passAge;
+    }
+    myShow(){
+       document.getElementById('myDiv01').innerHTML = 'Hello '+ this.myName + '. You are ' + this.myAge + ' years
+old<br>'
+    }
+   myDog = new myAnimal('Snickers', 5)
+   myDog.myShow()
+   
+</pre></font>
+
+<h3><font color="MediumAquaMarine"> Example working Classes code</h4>
+Nothing: <input type=text id="myText01" value="Useless at the Moment"><br>
+<input type=button value="Example Classes" onClick="{
+ class myAnimal {
+    constructor(passName, passAge){
+       this.myName = passName;
+       this.myAge = passAge
+    }
+                                                                            
+    myShow(){
+       document.getElementById('myDiv01').innerHTML = 'Hello ' + this.myName + ' You Are ' + this.myAge + ' years old<br> '
+ }
+ }  
+   myDog = new myAnimal('Snickers', 5)
+   myDog.myShow()
+                                                                            
+}">
+
+<div id="myDiv01">...</div>
+
+</////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////>
+<br>
+<br>
+
+Name <input type=text id="myText02" value="Nathan"><br>
+
+Age <input type=text id="myText03" value="17"><br>
+<input type=button value="ExampleClass" onClick="{
+let x = document.getElementById('myText02').value
+let y = document.getElementById('myText03').value
+class myAnimal{
+constructor(passName,passAge){
+this.myName = passName;
+this.myAge = passAge
+}
+myShow(){
+document.getElementById('myDiv02').innerHTML = 'Hello ' + this.myName + ' You Are ' + this.myAge + ' Years old<br> '
+}
+}
+myDog = new myAnimal( x, y)
+myDog.myShow()
+}">
+
+<div id="myDiv02">...</div>
+<br><br>
