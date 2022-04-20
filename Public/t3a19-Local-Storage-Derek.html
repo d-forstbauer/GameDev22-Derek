@@ -1,0 +1,45 @@
+<font color="lightblue"><h4>Version 0.0.2</h4></font>
+<!DOCTYPE html>
+<html>
+<body>
+<head>
+<style>
+body{ background-image: url('https://www.sciencenews.org/wp-content/uploads/2020/02/020620_ec_cold-hot_feat-1028x579.jpg')
+}
+ h1 {
+
+  text-shadow: 0 0 3px #FFB6C1, 0 0 5px #FAF0E6;
+}
+p {
+  font-family: verdana;
+  font-family: courier;
+  font-size: 15px;
+} 
+</style>
+</head>
+<body>
+
+<h1><font color="orange">Local Storage Webpage</h1>
+
+<body onload="{
+   myStorage = localStorage.getItem('myStoredText')
+   if(myStorage  != null){
+      document.getElementById('myText1').value = myStorage 
+    }
+}">
+
+<body onunload="{
+   localstorage.setItem('myStoredText',document.getElementById('myText1').value)
+}">   
+
+Text example: <input id="myText1" type=text size=70 value="" placeholder="Write here to store"><br>
+
+<input type="button" value="Store Text" onClick="{
+   localStorage.setItem('myStoredText', document.getElementById('myText1').value)
+   alert(document.getElementById('myText1').value + ' \nHas been stored')
+   document.getElementById('myText1').value = ''
+}">
+
+<input type="button" value="Retrieve Text" onClick="{
+   document.getElementById('myText1').value = localStorage.getItem('myStoredText')
+}"> 
