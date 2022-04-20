@@ -1,0 +1,51 @@
+<script src="http://translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
+<script src='https://code.responsivevoice.org/responsivevoice.js'></script>
+
+<script>
+    function googleTranslateElementInit() {
+  new google.translate.TranslateElement({pageLanguage: 'en', includedLanguages: 'en,fr,de,ru', layout:google.translate.TranslateElement.InlineLayout.SIMPLE, autoDisplay: false}, 'google_translate_element');
+
+    }
+</script>
+
+<h3>Version 0.0.1</h3>
+<!DOCTYPE html>
+<html>
+<body >
+<head>
+<style>
+
+body { background-image: url('https://wallpaperaccess.com/full/85246.jpg');
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: 100% 100%;
+}
+ h1 {
+  color:#9B57ED;
+  background-color: #470992;
+  text-shadow: 0 0 3px #FFC0CB, 0 0 5px #4169E1;
+}
+pre {
+  color:#9B57ED;
+  font-family: verdana;
+  font-family: courier;
+  font-size: 15px;
+  background-color: #470992;
+} 
+</style>
+</head>
+<body>
+
+
+<h1 align=center><font color="#9B57ED">Translate Webpage</h1>
+
+<pre><div id="google_translate_element"><font-color= "black">Hey now, you're an all-star, get your game on, go play.
+Hey now, you're a rock star, get the show on, get paid.
+And all that glitters is gold.
+Only shooting stars break the mold</div></pre>
+
+
+<input  type="button" value="initilize speak" onclick="{  
+   let myVoice = 'Russian Female'
+   responsiveVoice.speak(document.getElementById('google_translate_element').innerText, myVoice, {pitch: 1, rate: 1, volume : 1})                                              
+}"><br><br>
