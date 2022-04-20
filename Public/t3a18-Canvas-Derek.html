@@ -1,0 +1,109 @@
+<h3>Version 0.0.1</h3>
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+body  {
+  background-image: url("https://images.unsplash.com/photo-1551478279-713be6cb027d?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxleHBsb3JlLWZlZWR8MXx8fGVufDB8fHx8&w=1000&q=80");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+ h1 {
+  text-decoration: underline BlueViolet;
+  text-shadow: 0 0 3px #7FFFD4;
+}
+ h3 {
+  text-decoration: underline LimeGreen;
+  text-shadow: 0 0 3px #FFF8DC, 0 0 5px #FFFACD;
+}
+ p {
+  text-decoration: underline;
+  -webkit-text-decoration-color: LightBlue; /* Safari */  
+  text-decoration-color: LightGray;
+}
+</style>
+</head>
+<body>
+</body>
+</html>
+<h1 align=center>Canvas Webpage</h1>
+<p><font color="MediumBlue">You use loops and variables to make fast fancy drawings</p><br><br>
+<br>
+
+<h4><font color="white">Click the buttons left to right:</h4>
+<input type=button value="left eye" onclick="{
+   myContext.beginPath();
+   myContext.lineWidth = 6;
+   myContext.strokeStyle = 'white';
+   myContext.arc(100, 50, 40, 0, 2 * Math.PI);
+   myContext.stroke();
+}">
+
+<input type=button value="left iris" onclick="{
+   myContext.beginPath();
+   myContext.lineWidth = 15;
+   myContext.strokeStyle = 'lightblue';
+   myContext.arc(75, 35, 10, 0, 2 * Math.PI);
+   myContext.stroke();
+}">
+
+<input type=button value="left pupil" onclick="{
+   myContext.beginPath();
+   myContext.lineWidth = 10;
+   myContext.strokeStyle = 'black';
+   myContext.arc(75, 35, 5, 0, 2 * Math.PI);
+   myContext.stroke();
+}">
+
+<input type=button value="right eye" onclick="{
+   myContext.beginPath();
+   myContext.lineWidth = 6;
+   myContext.strokeStyle = 'white';
+   myContext.arc(200, 50, 40, 0, 2 * Math.PI);
+   myContext.stroke();
+}">
+
+<input type=button value="right iris" onclick="{
+   myContext.beginPath();
+   myContext.lineWidth = 15;
+   myContext.strokeStyle = 'lightblue';
+   myContext.arc(175, 35, 10, 0, 2 * Math.PI);
+   myContext.stroke();
+}">
+
+<input type=button value="right pupil" onclick="{
+   myContext.beginPath();
+   myContext.lineWidth = 10;
+   myContext.strokeStyle = 'black';
+   myContext.arc(175, 35, 5, 0, 2 * Math.PI);
+   myContext.stroke();
+}">
+
+<input type=button value="mouth" onclick="{
+   myContext.beginPath();
+   myContext.lineWidth = 6;
+   myContext.strokeStyle = 'white';
+   myContext.moveTo(20,120);
+   myContext.quadraticCurveTo(170,200,290,120);
+   myContext.stroke();
+}">
+
+
+
+
+
+
+
+
+
+<input type=button value="Clear all" onclick="{
+   myContext.clearRect(0, 0, myCanvas.width, myCanvas.height);
+}"><br><br>
+
+<canvas id="myCoolTag" width="1000" height="600" style="border:3px solid white;" ></canvas>
+
+<script>
+   // set up global variables
+   let myCanvas=document.getElementById('myCoolTag');
+   let myContext=myCanvas.getContext('2d');
+</script>
