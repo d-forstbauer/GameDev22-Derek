@@ -1,7 +1,6 @@
-<br><br><br>Start<br>
 
 
-<body id="myBody" style="background-repeat:repeat; background-size: 80%" background="myBackground01.jpg"     onkeydown="{
+<body id="myBody" style="background-repeat:repeat; background-size: 100%" background="myBackground01.jpg"     onkeydown="{
    let myKey = event.key
    //  let myKey = String.toLowerCase(event.key)
    document.getElementById('myDiv01').innerHTML = myKey
@@ -93,22 +92,32 @@ function myHitOther(my1,my2){
 function myCheckHit(){
    if ( myHitOther('myImg01','myImg02') ){
        alert('you lose')  
-       document.getElementById('myImg01').style.left = '20px'
+       document.getElementById('myImg01').style.left = '10px'
        location = 't2a13-keydown.html'  
    }
-}
-function myCheckHit(){
+
    if ( myHitOther('myImg01','myImg03') ){
        alert('you lose')  
-       document.getElementById('myImg01').style.left = '20px'
+       document.getElementById('myImg01').style.left = '10px'
        location = 't2a13-keydown.html'  
    }
-}
-function myCheckHit(){
+
    if ( myHitOther('myImg01','myImg04') ){
        alert('you lose')  
-       document.getElementById('myImg01').style.left = '20px'
-       location = 't2a13-keydown.html'  // go to your next level
+       document.getElementById('myImg01').style.left = '10px'
+       location = 't2a13-keydown.html' // go to your next level
+   }
+   
+ if ( myHitOther('myImg01','myImg05') ){
+       alert('you lose')  
+       document.getElementById('myImg01').style.left = '10px'
+       location = 't2a13-keydown.html' // go to your next level
+   }
+   
+   if ( myHitOther('myImg01','myImg06') ){
+       alert('you lose')  
+       document.getElementById('myImg01').style.left = '10px'
+       location = 't2a13-keydown.html' // go to your next level
    }
    // more if statements here like the above
 
@@ -119,14 +128,18 @@ function myCheckHit(){
 
 </script>
 
-<img id="myImg01" style="position:absolute; width:50px; height:50px; top:0px; left:0px;"  src="myImage01.jpg">
+<img id="myImg01" style="position:absolute; width:50px; height:50px; top:10px; left:10px;"  src="https://www.publicdomainpictures.net/pictures/30000/nahled/solid-green-background.jpg">
 
-<img id="myImg02" style="position:absolute; width:20px; height:200px; top:0px; left:100px;" src="https://upload.wikimedia.org/wikipedia/commons/thumb/4/49/A_black_image.jpg/640px-A_black_image.jpg">
+<img id="myImg02" style="position:absolute; width:500px; height:20px; top:-15px; left:0px;" src="https://upload.wikimedia.org/wikipedia/commons/thumb/4/49/A_black_image.jpg/640px-A_black_image.jpg">
 
-<img id="myImg03" style="position:absolute; width:40px; height:20px; top:100px; left:0px;" src="https://upload.wikimedia.org/wikipedia/commons/thumb/4/49/A_black_image.jpg/640px-A_black_image.jpg">
+<img id="myImg03" style="position:absolute; width:20px; height:500px; top:0px; left:-15px;" src="https://upload.wikimedia.org/wikipedia/commons/thumb/4/49/A_black_image.jpg/640px-A_black_image.jpg">
 
-<img id="myImg04" style="position:absolute; width:40px; height:20px; top:180px; left:60px;" src="https://upload.wikimedia.org/wikipedia/commons/thumb/4/49/A_black_image.jpg/640px-A_black_image.jpg">
-<br><br>
+<img id="myImg04" style="position:absolute; width:500px; height:20px; top:480px; left:0px;" src="https://upload.wikimedia.org/wikipedia/commons/thumb/4/49/A_black_image.jpg/640px-A_black_image.jpg">
 
+<img id="myImg05" style="position:absolute; width:20px; height:500px; top:0px; left:480px;" src="https://upload.wikimedia.org/wikipedia/commons/thumb/4/49/A_black_image.jpg/640px-A_black_image.jpg">
 
-<div id="myDiv01" style="color:black">..</div>
+<img id="myImg06" style="position:absolute; width:355px; height:420px; top:0px; left:65px;" src="https://upload.wikimedia.org/wikipedia/commons/thumb/4/49/A_black_image.jpg/640px-A_black_image.jpg">
+
+<img id="myImg07" style="position:absolute; width:50px; height:50px; top:10px; left:425px;"  src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAOEAAADhCAMAAAAJbSJIAAAAA1BMVEX/AAAZ4gk3AAAASElEQVR4nO3BgQAAAADDoPlTX+AIVQEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAADwDcaiAAFXD1ujAAAAAElFTkSuQmCC">
+
+<img id="myImg08" style="position:absolute; width:50px; height:25px; top:10px; left:425px;"  src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAOEAAADhCAMAAAAJbSJIAAAAA1BMVEX/AAAZ4gk3AAAASElEQVR4nO3BgQAAAADDoPlTX+AIVQEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAADwDcaiAAFXD1ujAAAAAElFTkSuQmCC">
