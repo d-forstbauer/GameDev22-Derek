@@ -60,7 +60,85 @@
    }
    
    
+   
+   
+}"
+onkeydown="{
+   let myKey = event.key
+   //  let myKey = String.toLowerCase(event.key)
+   document.getElementById('myDiv01').innerHTML = myKey
+   if (myKey == 'd') {
+     // either uncomment
+     // clearInterval(myInterval)
+     // myInterval = setInterval(function(){
+     //    document.getElementById('myImg402').style.left = parseInt(document.getElementById('myImg402').style.left) + 5
+     //    myCheckHit()
+     // } ,20)
+     // or do the following
+      document.getElementById('myImg402').style.left = parseInt(document.getElementById('myImg402').style.left) + 5
+      myCheckHit()
+   }
+   
+   // let myKey = event.key
+   //  let myKey = String.toLowerCase(event.key)
+   document.getElementById('myDiv01').innerHTML = myKey
+   if (myKey == 'a') {
+     // either uncomment
+     // clearInterval(myInterval)
+     // myInterval = setInterval(function(){
+     //    document.getElementById('myImg402').style.left = parseInt(document.getElementResultById('myImg402').style.left) - 5
+     //    myCheckHit()
+     // } ,20)
+     // or do the following
+      document.getElementById('myImg402').style.left = parseInt(document.getElementById('myImg402').style.left) - 5
+      myCheckHit()
+   }
+   
+    // let myKey = event.key
+   //  let myKey = String.toLowerCase(event.key)
+   document.getElementById('myDiv01').innerHTML = myKey
+   if (myKey == 'w') {
+     // either uncomment
+     // clearInterval(myInterval)
+     // myInterval = setInterval(function(){
+     //    document.getElementById('myImg402').style.top = parseInt(document.getElementById('myImg402').style.top) - 5
+     //    myCheckHit()
+     // } ,20)
+     // or do the following
+      document.getElementById('myImg402').style.top = parseInt(document.getElementById('myImg402').style.top) - 5
+      myCheckHit()
+   }
+   
+   // let myKey = event.key
+   //  let myKey = String.toLowerCase(event.key)
+   document.getElementById('myDiv01').innerHTML = myKey
+   if (myKey == 's') {
+     // either uncomment
+     // clearInterval(myInterval)
+     // myInterval = setInterval(function(){
+     //    document.getElementById('myImg402').style.top = parseInt(document.getElementById('myImg402').style.top) + 5
+     //    myCheckHit()
+     // } ,20)
+     // or do the following
+      document.getElementById('myImg402').style.top = parseInt(document.getElementById('myImg402').style.top) + 5
+      myCheckHit()
+   }
+   
+   
+   
+   
 }">
+
+
+
+
+
+
+
+
+
+
+
 
 
 <script>
@@ -2137,13 +2215,13 @@ function myCheckHit(){
 
 <img id="myImg01" style="position:absolute; width:15px; height:15px; top:367px; left:62px;"  src="https://www.publicdomainpictures.net/pictures/30000/nahled/solid-green-background.jpg">
 
-<img id="myImg02" style="position:absolute; width:1040px; height:10px; top:55px; left:50px;" src="https://upload.wikimedia.org/wikipedia/commons/thumb/4/49/A_black_image.jpg/640px-A_black_image.jpg">
+<img id="myImg02" style="position:absolute; width:1040px; height:10px; top:55px; left:50px;" src="https://upload.wikimedia.org/wikipedia/commons/thumb/f/ff/Solid_blue.svg/225px-Solid_blue.svg.png">
 
-<img id="myImg03" style="position:absolute; width:10px; height:690px; top:55px; left:50px;" src="https://upload.wikimedia.org/wikipedia/commons/thumb/4/49/A_black_image.jpg/640px-A_black_image.jpg">
+<img id="myImg03" style="position:absolute; width:10px; height:690px; top:55px; left:50px;" src="https://upload.wikimedia.org/wikipedia/commons/thumb/f/ff/Solid_blue.svg/225px-Solid_blue.svg.png">
 
-<img id="myImg04" style="position:absolute; width:1040px; height:10px; top:735px; left:50px;" src="https://upload.wikimedia.org/wikipedia/commons/thumb/4/49/A_black_image.jpg/640px-A_black_image.jpg">
+<img id="myImg04" style="position:absolute; width:1040px; height:10px; top:735px; left:50px;" src="https://upload.wikimedia.org/wikipedia/commons/thumb/f/ff/Solid_blue.svg/225px-Solid_blue.svg.png">
 
-<img id="myImg05" style="position:absolute; width:10px; height:690px; top:55px; left:1080px;" src="https://upload.wikimedia.org/wikipedia/commons/thumb/4/49/A_black_image.jpg/640px-A_black_image.jpg">
+<img id="myImg05" style="position:absolute; width:10px; height:690px; top:55px; left:1080px;" src="https://upload.wikimedia.org/wikipedia/commons/thumb/f/ff/Solid_blue.svg/225px-Solid_blue.svg.png">
 
 <img id="myImg06" style="position:absolute; width:75px; height:5px; top:360px; left:60px;" src="https://upload.wikimedia.org/wikipedia/commons/thumb/4/49/A_black_image.jpg/640px-A_black_image.jpg">
 
@@ -2935,32 +3013,18 @@ function myCheckHit(){
 
 <img id="myImg399" style="position:absolute; width:30px; height:5px; top:485px; left:830px;" src="https://upload.wikimedia.org/wikipedia/commons/thumb/4/49/A_black_image.jpg/640px-A_black_image.jpg">
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 <img id="myImg400" style="position:absolute; width:15px; height:15px; top:367px; left:1062px;"  src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAOEAAADhCAMAAAAJbSJIAAAAA1BMVEX/AAAZ4gk3AAAASElEQVR4nO3BgQAAAADDoPlTX+AIVQEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAADwDcaiAAFXD1ujAAAAAElFTkSuQmCC">
 
 <img id="myImg401" style="position:absolute; width:15px; height:7px; top:374px; left:1062px;"  src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAOEAAADhCAMAAAAJbSJIAAAAA1BMVEX/AAAZ4gk3AAAASElEQVR4nO3BgQAAAADDoPlTX+AIVQEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAADwDcaiAAFXD1ujAAAAAElFTkSuQmCC">
 
+
+<img id="myImg402" style="position:absolute; width:2000px; height:2000px; top:415px; left:-500px;" src="https://media.tarkett-image.com/large/TH_24567080_24594080_24596080_24601080_24563080_24565080_24588080_001.jpg">
+
+<img id="myImg403" style="position:absolute; width:2000px; height:800px; top:-465px; left:-500px;" src="https://media.tarkett-image.com/large/TH_24567080_24594080_24596080_24601080_24563080_24565080_24588080_001.jpg">
+
+<img id="myImg404" style="position:absolute; width:2000px; height:800px; top:0px; left:-1970px;" src="https://media.tarkett-image.com/large/TH_24567080_24594080_24596080_24601080_24563080_24565080_24588080_001.jpg">
+
+<img id="myImg405" style="position:absolute; width:2000px; height:800px; top:0px; left:110px;" src="https://media.tarkett-image.com/large/TH_24567080_24594080_24596080_24601080_24563080_24565080_24588080_001.jpg">
    
    
    
